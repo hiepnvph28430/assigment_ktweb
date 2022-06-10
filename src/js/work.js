@@ -38,16 +38,16 @@ function showWork(works) {
     for (let i = 0; i < works.length; i++) {
         const work = works[i];
         result += `
-    <div class="md:flex  md:space-x-4  gap-8 border-b pb-5  cursor-pointer group ">
+    <div class="md:flex  md:space-x-4  border-b pb-5  cursor-pointer group ">
         <div class="">
             <a href="">
                 <img src="${work.image}"
-                    alt="" class="">
+                    alt="" class="w-full mt-1">
             </a>
         </div>
-        <div class="pt-2 md:pt-0">
+        <div class="pt-2 md:pt-0 ">
             <a href="./workdetail.html">
-                <h3 class="font-bold text-3xl group-hover:text-red-400">${work.name}</h3>
+                <h3 class="font-bold text-[24px] md:text-3xl group-hover:text-red-400">${work.name}</h3>
             </a>
             <div class="flex items-center space-x-8 py-2">
                 <span
