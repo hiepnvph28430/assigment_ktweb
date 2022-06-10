@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <script type="module" src="./src/js/work.js"></script>
+    <div class="container mx-auto  max-w-7xl px-6 md:20px mt-5 ">
+        <div id="menu" class="md:hidden  flex flex-row-reverse">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </div>
+        <div class="list-nav item-center hidden md:block">
+            <ul class="flex space-x-8 justify-end ">
+                <li><a href="work.html" class="text-xl font-medium hover:text-red-500">Works</a>
+                </li>
+                <li><a href="blog.html" class="text-xl font-medium hover:text-red-500">Blog</a></li>
+                <li><a href="" class="text-xl font-medium hover:text-red-500">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container mx-auto max-w-7xl px-6 md:px-20 mt-5">
+        <div class="md:pl-10 max-full md:max-w-5xl  md:mt-10 ">
+            <div class="py-10">
+                <h2 class="font-bold text-[30px] md:text-[44px]">Work</h2>
+            </div>
+            <div id="works" class="space-y-8">
+       
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto  max-w-7xl px-20 mt-20">
+        <div class="item-center">
+            <ul class="flex justify-center space-x-10">
+                <li><a href="">
+                        <img src="https://res.cloudinary.com/hiepnc/image/upload/v1654445304/fb_jdujfc.png"
+                            alt="">
+                    </a></li>
+                <li><a href="">
+                        <img src="https://res.cloudinary.com/hiepnc/image/upload/v1654445305/insta_sv7iij.png"
+                            alt="">
+                    </a></li>
+                <li><a href="">
+                        <img src="https://res.cloudinary.com/hiepnc/image/upload/v1654445305/Group_sc7ni5.png"
+                            alt="">
+                    </a></li>
+                <li><a href="">
+                        <img src="https://res.cloudinary.com/hiepnc/image/upload/v1654445305/Linkedin_p5lnpt.png"
+                            alt="">
+                    </a></li>
+            </ul>
+        </div>
+        <div class="text-center py-6 ">
+            <p class="text-base font-normal">Copyright ©2022 All rights reserved </p>
+        </div>
+    </div>
+    <script>
+        const menu = document.querySelector("#menu");
+        const listNav = document.querySelector(".list-nav");
+
+
+        menu.addEventListener("click", () => {
+            listNav.classList.toggle("hidden");
+        });
+    </script>
+
+</body>
+
+</html>
