@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Detail</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="container mx-auto max-w-5xl px-5 md:px-20 mt-5">
+        <div id="menu" class="md:hidden flex flex-row-reverse">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </div>
+        <div class=" list-nav item-center hidden md:block">
+            <ul class=" flex space-x-8 justify-end ">
+                <li><a href="work.html" class="text-xl font-medium hover:text-red-500">Works</a>
+                </li>
+                <li><a href="blog.html" class="text-xl font-medium hover:text-red-500">Blog</a></li>
+                <li><a href="" class="text-xl font-medium hover:text-red-500">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container mx-auto max-w-5xl px-5 md:px-20 mt-5">
+        <div class="">
+            <div class=" md:pl-10 md:mt-20">
+                <div class=" ">
+                    <h2 class="font-bold text-[30px] md:text-[34px] ">Designing Dashboards with <br
+                            class="hidden md:block"> usability in mind</h2>
+                </div>
+                <div class="md:space-x-12 space-x-3 py-5 flex ">
+                    <span
+                        class=" rounded-xl px-2 bg-[#FF7C7C] text-white font-black text-lg max-h-7  ">2020</span>
+                    <span class="text-[18px] md:text-xl text-[#21243D]">Dashboard, User Experience
+                        Design</span>
+                </div>
+                <p class="text-base font-normal pb-4 max-w-2xl">Amet minim mollit non deserunt
+                    ullamco est sit aliqua
+                    dolor do amet sint. Velit officia consequat duis
+                    enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <img src="images/Rectangle 4-1.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container mx-auto max-w-5xl px-5 md:px-20 mt-5">
+        <div class="md:pl-10">
+            <h2 class="text-[26px] md:text-[30px] font-medium">Heading 1</h2>
+            <h3 class="text-[20px] md:text-[24px] font-medium">Heading 2</h3>
+            <p class="leading-tight text-[16px] font-normal max-w-2xl py-1"> Amet minim mollit non
+                deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+                enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            <a href="" class="mx-2">
+                <img src="https://res.cloudinary.com/hiepnc/image/upload/v1654761537/de1_vrj31b.png"
+                    alt="">
+            </a>
+            <a href="">
+                <img src="https://res.cloudinary.com/hiepnc/image/upload/v1654761536/de2_mztkla.png"
+                    alt="" class="">
+            </a>
+        </div>
+    </div>
+    <div class="container mx-auto max-w-5xl px-5 md:px-20 mt-20">
+        <div class="item-center">
+            <ul class="flex justify-center space-x-10">
+                <li><a href="">
+                        <img src="https://res.cloudinary.com/hiepnc/image/upload/v1654445304/fb_jdujfc.png"
+                            alt="">
+                    </a></li>
+                <li><a href="">
+                        <img src="https://res.cloudinary.com/hiepnc/image/upload/v1654445305/insta_sv7iij.png"
+                            alt="">
+                    </a></li>
+                <li><a href="">
+                        <img src="https://res.cloudinary.com/hiepnc/image/upload/v1654445305/Group_sc7ni5.png"
+                            alt="">
+                    </a></li>
+                <li><a href="">
+                        <img src="https://res.cloudinary.com/hiepnc/image/upload/v1654445305/Linkedin_p5lnpt.png"
+                            alt="">
+                    </a></li>
+            </ul>
+        </div>
+        <div class="text-center py-6 ">
+            <p class="text-base font-normal">Copyright ©2022 All rights reserved </p>
+        </div>
+    </div>
+    <script>
+        const menu = document.querySelector("#menu");
+        const listNav = document.querySelector(".list-nav");
+
+        menu.addEventListener("click", function () {
+            listNav.classList.toggle("hidden");
+        });
+    </script>
+</body>
+
+</html>
