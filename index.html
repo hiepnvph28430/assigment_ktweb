@@ -1,13 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    
-    <script type="module" src="./src/js/index.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang Chủ</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      font-family: 'Heebo', sans-serif;
+    }
+  </style>
+  <link rel="stylesheet" href="./src/js/index.js">
+</head>
+
+<body>
+  <div class="container mx-auto max-w-7xl px-6 md:px-20 mt-5 ">
+    <div id="menu" class="md:hidden flex flex-row-reverse">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </div>
+    <div class=" list-nav item-center hidden md:block ">
+      <ul class=" flex space-x-8 justify-end ">
+        <li><a href="work.html" class="text-xl font-medium hover:text-red-500">Works</a></li>
+        <li><a href="blog.html" class="text-xl font-medium hover:text-red-500">Blog</a></li>
+        <li><a href="" class="text-xl font-medium hover:text-red-500">Contact</a></li>
+      </ul>
+    </div>
+    <div
+      class="flex flex-col-reverse md:grid md:grid-cols-3 md:justify-between gap-8 mt-10 md:mt-20 mb-5 ">
+
+      <div class="col-span-2  text-center  md:text-left">
+        <h2
+          class="text-[32px] md:text-[44px] max-w-[316px] md:max-w-none font-bold mx-auto leading-tight">
+          Hi, I am John,
+          <br class=""> Creative Technologist
+        </h2>
+
+        <p class="font-normal text-base py-5 ">Amet minim mollit non deserunt ullamco est sit aliqua
+          dolor
+          do
+          amet sint. Velit officia consequat
+          duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        <button type="submit"
+          class="border rounded bg-red-400 px-5 py-2 font-medium text-white">Download
+          Resume</button>
+      </div>
+
+      <div class="col-span-1 mx-auto md:mr-0 ">
+        <img src="https://res.cloudinary.com/hiepnc/image/upload/v1654238038/Ellipse_1_1_qmwvpr.jpg"
+          alt="" class="">
+      </div>
+
+    </div>
+  </div>
+  <div class="container mx-auto max-w-7xl bg-[#EDF7FA] px-6  md:px-20">
+    <div class="md:flex justify-between py-7 ">
+      <div>
+        <p class="text-xl text-center font-normal text-[#21243D]">Recent posts</p>
+      </div>
+      <div>
+        <p class="text-base font-normal text-[#00A8CC] hidden md:block">View all</p>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pb-7">
+      <div
+        class="block border bg-white py-5 mr-3 md:mr-0 px-2  md:px-4 space-y-2  md:space-y-7 rounded cursor-pointer hover:border-blue-300 group">
+        <a href="">
+          <h3 class="font-bold text-2xl group-hover:text-red-400">Making a design system from
+            scratch</h3>
+        </a>
+        <div class="flex space-x-2 md:space-x-8">
+          <span class="text-[16px] md:text-lg">12 Feb 2020</span><span>|</span><span
+            class="text-[16px] md:text-lg">Design,Pattern</span>
+        </div>
+        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+          consequat
+          duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+      </div>
+      <div
+        class="block border bg-white py-5 px-2 mr-3 md:mr-0 md:px-4 space-y-2 md:space-y-7 rounded cursor-pointer hover:border-blue-300 group">
+        <a href="">
+          <h3 class="font-bold text-2xl group-hover:text-red-400">Creating pixel perfect icons in
+            Figma</h3>
+        </a>
+        <div class="flex space-x-2 md:space-x-8">
+          <span class="text-[16px] md:text-lg">12 Feb 2020</span><span>|</span><span
+            class="text-[16px] md:text-lg">Figma,Icon Design</span>
+        </div>
+        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+          consequat
+          duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+      </div>
+    </div>
+  </div>
+  <div class="container mx-auto max-w-7xl px-6 md:px-20 ">
+    <div class="block">
+      <p class="py-7 text-2xl text-center md:text-left font-normal">Featured works</p>
+      <div class="md:space-y-8 mt-5">
+        <div class="md:flex md:space-x-6 border-b pb-5 cursor-pointer hover:border-blue-300 group">
+          <div class="">
+            <a href="">
+              <img
+                src="https://res.cloudinary.com/hiepnc/image/upload/v1654237929/Rectangle_30_koly1a.jpg"
+                alt="" class="w-full">
+            </a>
+          </div>
+          <div class="">
+            <a href="">
+              <h3 class="font-bold text-[24px] md:text-3xl group-hover:text-red-400">Designing
+                Dashboards</h3>
+            </a>
+            <div class="space-x-8 py-2 items-center">
+              <span
+                class=" rounded-full px-2 bg-[#142850] text-white font-black text-lg py-1">2020</span>
+              <span class="text-xl text-[#8695A4]">Dashboard</span>
+            </div>
+            <p class="text-base font-normal">Amet minim mollit non deserunt ullamco est sit aliqua
+              dolor do
+              amet sint. Velit officia consequat
+              duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+          </div>
+        </div>
+
+        <div
+          class="md:flex space-x-6 border-b pb-5 hidden cursor-pointer hover:border-blue-300 group">
+          <div class="">
+            <a href="">
+              <img
+                src="https://res.cloudinary.com/hiepnc/image/upload/v1654237929/Rectangle_32_jcms7a.jpg"
+                alt="">
+            </a>
+          </div>
+          <div class="">
+            <a href="">
+              <h3 class="font-bold text-3xl group-hover:text-red-400">Designing Dashboards</h3>
+            </a>
+            <div class="space-x-8 py-2 items-center">
+              <span
+                class=" rounded-full px-2 bg-[#142850] text-white font-black text-lg py-1">2018</span>
+              <span class="text-xl text-[#8695A4]">Illustration</span>
+            </div>
+            <p class="text-base font-normal">Amet minim mollit non deserunt ullamco est sit aliqua
+              dolor do
+              amet sint. Velit officia consequat
+              duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+          </div>
+        </div>
+
+        <div
+          class="hidden md:flex space-x-6 border-b pb-5 cursor-pointer hover:border-blue-300 group">
+          <div>
+            <a href="">
+              <img
+                src="https://res.cloudinary.com/hiepnc/image/upload/v1654237929/Rectangle_34_zpt01k.jpg"
+                alt="">
+            </a>
+          </div>
+          <div class="">
+            <a href="">
+              <h3 class="font-bold text-3xl group-hover:text-red-400">Designing Dashboards</h3>
+            </a>
+            <div class="space-x-8 py-2 items-center">
+              <span
+                class=" rounded-full px-2 bg-[#142850] text-white font-black text-lg py-1">2020</span>
+              <span class="text-xl text-[#8695A4]">Typography</span>
+            </div>
+            <p class="text-base font-normal">Amet minim mollit non deserunt ullamco est sit aliqua
+              dolor do
+              amet sint. Velit officia consequat
+              duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mx-auto max-w-7xl px-6 md:px-20 mt-20">
+    <div class="item-center">
+      <ul class="flex justify-center space-x-10">
+        <li><a href="">
+            <img src="https://res.cloudinary.com/hiepnc/image/upload/v1654445304/fb_jdujfc.png"
+              alt="">
+          </a></li>
+        <li><a href="">
+            <img src="https://res.cloudinary.com/hiepnc/image/upload/v1654445305/insta_sv7iij.png"
+              alt="">
+          </a></li>
+        <li><a href="">
+            <img src="https://res.cloudinary.com/hiepnc/image/upload/v1654445305/Group_sc7ni5.png"
+              alt="">
+          </a></li>
+        <li><a href="">
+            <img
+              src="https://res.cloudinary.com/hiepnc/image/upload/v1654445305/Linkedin_p5lnpt.png"
+              alt="">
+          </a></li>
+      </ul>
+    </div>
+    <div class="text-center py-6 ">
+      <p class="text-base font-normal">Copyright ©2022 All rights reserved </p>
+    </div>
+  </div>
+
+  <script>
+    const menu = document.querySelector("#menu");
+    const listNav = document.querySelector(".list-nav");
+
+
+    menu.addEventListener("click", function () {
+      listNav.classList.toggle("hidden");
+    });
+ </script>
+</body>
 </html>
